@@ -24,11 +24,12 @@ def scrape_page(slug, table):
 		y += width
     	dict1 = {}
     	
-	pd.DataFrame(lister).to_csv(slug + "-" + table_id.replace('"', '') + "2016" + ".csv")
+	pd.DataFrame(lister).to_csv(slug + "-" + table_id.replace('"', '') + "2016.csv")
 
 
 team_slug = ['nwe', 'mia', 'buf', 'nyj', 'pit', 'rav', 'cin', 'cle', 'htx', \
-	'oti', 'clt', 'jax', 'kan', 'rai', 'den', 'sdg']
+	'oti', 'clt', 'jax', 'kan', 'rai', 'den', 'sdg', 'dal', 'nyg', 'was', 'phi',\
+	'gnb', 'det', 'min', 'chi', 'atl', 'tam', 'nor', 'car', 'sea', 'crd', 'ram', 'sfo']
 
 for slug in team_slug:
 	print "Working on:", slug
