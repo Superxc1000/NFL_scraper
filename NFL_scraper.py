@@ -24,7 +24,7 @@ def scrape_page(slug, table):
 		y += width
     	dict1 = {}
     	
-	pd.DataFrame(lister).to_csv(slug + "-" + table_id.replace('"', '') + "2016" + ".csv")
+	pd.DataFrame(lister).to_csv(slug + "-" + table_id.replace('"', '') + "2016.csv")
 
 
 team_slug = ['nwe', 'mia', 'buf', 'nyj', 'pit', 'rav', 'cin', 'cle', 'htx', \
